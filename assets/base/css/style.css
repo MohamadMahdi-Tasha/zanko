@@ -27,6 +27,7 @@ img {pointer-events: none;}
 .hover-drop-down-toggle > svg {margin-left: .5rem;}
 .form-input:focus {border-width: 2px;}
 .social-btn > img {margin-right: .5rem;}
+.social-btn:hover {background-color: #e2e2e2;}
 
 body {
     font-family: Yekan, sans-serif !important;
@@ -79,4 +80,5 @@ body {
     background-color: white;
     border: 1px solid #C4C4C4;
     padding: .5rem;
+    transition: .3s;
 }
