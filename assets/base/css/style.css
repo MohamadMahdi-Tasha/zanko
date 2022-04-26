@@ -6,6 +6,9 @@
 :root {
     --dark-blue: #063468;
     --darker-blue: #052952;
+    --light-blue-gradiant: #0E70D4;
+    --dark-blue-gradiant: #28CFE4;
+    --blue-gradiant: linear-gradient(270deg, var(--dark-blue-gradiant), var(--light-blue-gradiant));
 }
 
 /*Universal Selector*/
@@ -17,12 +20,19 @@
 
 /*Styles*/
 button {cursor: pointer;}
-header > ul:first-of-type > li:not(:last-of-type) {margin-left: .5rem;}
-body {font-family: Yekan, sans-serif !important;}
+header > ul:first-of-type > li:not(:last-of-type) {margin-left: 1rem !important;}
+img {pointer-events: none;}
 .ml-1 {margin-left: 1rem;}
 .btn-gradiant:hover {box-shadow: 0 0 20px 2px rgba(0,0,0,0.2);}
 .hover-drop-down-toggle > svg {margin-left: .5rem;}
-.hover-drop-down-list > li:hover {background: var(--darker-blue);}
+.form-input:focus {border-width: 2px;}
+.social-btn > img {margin-right: .5rem;}
+
+body {
+    font-family: Yekan, sans-serif !important;
+    font-size: 14px;
+}
+
 .register-body {
     background: radial-gradient(circle, #e8fcff, rgba(229,229,229,1) 49%);
     padding: 2rem 5rem;
@@ -42,41 +52,31 @@ body {font-family: Yekan, sans-serif !important;}
     transition: .3s;
 }
 
-.hover-drop-down-list {
-    padding-left: 0 !important;
-    padding-bottom: 0 !important;
-    padding-right: 0 !important;
-    position: absolute;
-    list-style: none;
-    margin: 0 !important;
-    border-radius: .5rem;
-    overflow: hidden;
-    transition: .3s;
-    opacity: 0;
-    pointer-events: none;
-}
-
 .hover-drop-down-toggle {
     color: var(--dark-blue) !important;
     text-decoration: none;
     font-size: 14px;
+    white-space: nowrap;
 }
 
-.hover-drop-down-list > li {
-    background-color: var(--dark-blue);
-    padding: .75rem;
-    width: 10vw;
+.form-label {
+    color: var(--dark-blue);
+    font-size: 16px;
+}
+
+.form-input {
+    background-color: white;
+    height: 30px;
+    padding: 1rem;
+    border: 1px solid #63aeff;
+    color: #007eff;
+    outline: none;
+    border-radius: 3px;
     transition: .3s;
-    cursor: pointer;
 }
 
-.hover-drop-down-list > li > a {
-    text-decoration: none;
-    color: white;
-}
-
-.hover-drop-down-toggle:hover ~ .hover-drop-down-list,
-.hover-drop-down-list:hover {
-    opacity: 1;
-    pointer-events: visible;
+.social-btn {
+    background-color: white;
+    border: 1px solid #C4C4C4;
+    padding: .5rem;
 }

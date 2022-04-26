@@ -25,7 +25,7 @@
 <body dir="rtl" class="register-body">
 <!--Pages Structure-->
 <!--Header Section-->
-<header class="d-inline-flex w-100 align-items-center justify-content-between">
+<header class="d-inline-flex mb-5 w-100 align-items-center justify-content-between">
     <!--Right Side-->
     <ul class="d-inline-flex align-items-center justify-content-between list-unstyled w-50">
         <li>
@@ -50,13 +50,6 @@
                 </svg>
                 امکانات ترکر
             </a>
-            <ul class="hover-drop-down-list">
-                <li><a href="#">امکانات ترکر</a></li>
-                <li><a href="#">امکانات ترکر</a></li>
-                <li><a href="#">امکانات ترکر</a></li>
-                <li><a href="#">امکانات ترکر</a></li>
-                <li><a href="#">امکانات ترکر</a></li>
-            </ul>
         </li>
         <li>
             <a href="#" class="hover-drop-down-toggle">
@@ -72,13 +65,6 @@
                 </svg>
                 ویدئو آموزشی
             </a>
-            <ul class="hover-drop-down-list">
-                <li><a href="#">ویدئو آموزشی</a></li>
-                <li><a href="#">ویدئو آموزشی</a></li>
-                <li><a href="#">ویدئو آموزشی</a></li>
-                <li><a href="#">ویدئو آموزشی</a></li>
-                <li><a href="#">ویدئو آموزشی</a></li>
-            </ul>
         </li>
         <li>
             <a href="#" class="hover-drop-down-toggle">
@@ -94,13 +80,6 @@
                 </svg>
                 قیمت اشتراک ماهانه
             </a>
-            <ul class="hover-drop-down-list">
-                <li><a href="#">قیمت اشتراک ماهانه</a></li>
-                <li><a href="#">قیمت اشتراک ماهانه</a></li>
-                <li><a href="#">قیمت اشتراک ماهانه</a></li>
-                <li><a href="#">قیمت اشتراک ماهانه</a></li>
-                <li><a href="#">قیمت اشتراک ماهانه</a></li>
-            </ul>
         </li>
         <li>
             <a href="#" class="hover-drop-down-toggle">
@@ -109,66 +88,59 @@
                 </svg>
                 همکاری با تیم ترکر
             </a>
-            <ul class="hover-drop-down-list">
-                <li><a href="#">همکاری با تیم ترکر</a></li>
-                <li><a href="#">همکاری با تیم ترکر</a></li>
-                <li><a href="#">همکاری با تیم ترکر</a></li>
-                <li><a href="#">همکاری با تیم ترکر</a></li>
-                <li><a href="#">همکاری با تیم ترکر</a></li>
-            </ul>
         </li>
     </ul>
     <!--Left Side-->
     <div class="w-50 d-flex align-items-center justify-content-end"><a class="text-decoration-none" href="#"><button class="btn-gradiant">ورود</button></a></div>
 </header>
 <!--Main Section-->
-<main class="d-none">
+<main class="d-inline-flex w-100">
     <!--Right Side-->
-    <div>
-        <form action="#">
-            <label for="full-name">نام و نام‌خانوادگی</label>
-            <input type="text" id="full-name">
-            <label for="email">ایمیل</label>
-            <input type="email" id="email">
+    <div class="w-50">
+        <form action="#" class="w-100 d-flex flex-column mb-5">
+            <label for="full-name" class="form-label">نام و نام‌خانوادگی</label>
+            <input required type="text" id="full-name" class="form-input mb-4">
+            <label for="email" class="form-label">ایمیل</label>
+            <input required type="email" id="email" class="form-input mb-4">
             <!--Bottom Inputs-->
-            <div>
+            <div class="d-inline-flex w-100 mb-5">
                 <!--Right Side-->
-                <div>
-                    <label for="password">گذرواژه</label>
-                    <input type="password" id="password">
+                <div class="ml-1 w-50 d-flex flex-column">
+                    <label class="form-label" for="password">گذرواژه</label>
+                    <input required class="form-input" type="password" id="password">
                 </div>
                 <!--Left Side-->
-                <div>
-                    <label for="repeat-password">گذرواژه</label>
-                    <input type="password" id="repeat-password">
+                <div class="w-50 d-flex flex-column">
+                    <label class="form-label" for="repeat-password">تکرار گذرواژه</label>
+                    <input required class="form-input" type="password" id="repeat-password">
                 </div>
             </div>
-            <button type="submit">عضویت</button>
+            <button class="btn-gradiant w-25" type="submit">عضویت</button>
         </form>
         <!--Bottom Buttons-->
-        <div>
+        <div class="w-100 d-inline-flex align-items-center justify-content-between">
             <a href="#">
-                <button type="button">
-                    <img src="assets/base/img/register/google.png" alt="گوگل">
+                <button type="button" class="social-btn">
                     حساب گوگل
+                    <img src="assets/base/img/register/google.png" alt="گوگل">
                 </button>
             </a>
             <a href="#">
-                <button type="button">
-                    <img src="assets/base/img/register/linked-in.png" alt="لینکدین">
+                <button type="button" class="social-btn">
                     حساب لینکدین
+                    <img src="assets/base/img/register/linked-in.png" alt="لینکدین">
                 </button>
             </a>
             <a href="#">
-                <button type="button">
-                    <img src="assets/base/img/register/microsoft.png" alt="مایکروسافت">
+                <button type="button" class="social-btn">
                     حساب مایکروسافت
+                    <img src="assets/base/img/register/microsoft.png" alt="مایکروسافت">
                 </button>
             </a>
         </div>
     </div>
     <!--Left Side-->
-    <div><img src="assets/base/img/register/left-side-img.png" alt="ثبت نام"></div>
+    <div class="w-50 d-flex align-items-center justify-content-center"><img src="assets/base/img/register/left-side-img.png" alt="ثبت نام"></div>
 </main>
 <!--Bottom Side-->
 <div class="d-none"><img src="assets/base/img/register/trusted-by.png" alt="برندهایی که به ما اطمینان کرده‌اند"></div>
