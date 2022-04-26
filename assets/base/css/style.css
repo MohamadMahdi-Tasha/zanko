@@ -1,0 +1,82 @@
+/*Codes By Mahdi Tasha*/
+/*Linking Fonts*/
+@import "../fonts/Yekan-Font-master/Yekan.css";
+
+/*Variables*/
+:root {
+    --dark-blue: #063468;
+    --darker-blue: #052952;
+}
+
+/*Universal Selector*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Styles*/
+button {cursor: pointer;}
+header > ul:first-of-type > li:not(:last-of-type) {margin-left: .5rem;}
+body {font-family: Yekan, sans-serif !important;}
+.ml-1 {margin-left: 1rem;}
+.btn-gradiant:hover {box-shadow: 0 0 20px 2px rgba(0,0,0,0.2);}
+.hover-drop-down-toggle > svg {margin-left: .5rem;}
+.hover-drop-down-list > li:hover {background: var(--darker-blue);}
+.register-body {
+    background: radial-gradient(circle, #e8fcff, rgba(229,229,229,1) 49%);
+    padding: 2rem 5rem;
+}
+
+.btn-gradiant {
+    background: linear-gradient(270deg, #0E70D4 4.24%, #28CFE4 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    padding: .5rem;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    transition: .3s;
+}
+
+.hover-drop-down-list {
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+    padding-right: 0 !important;
+    position: absolute;
+    list-style: none;
+    margin: 0 !important;
+    border-radius: .5rem;
+    overflow: hidden;
+    transition: .3s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hover-drop-down-toggle {
+    color: var(--dark-blue) !important;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.hover-drop-down-list > li {
+    background-color: var(--dark-blue);
+    padding: .75rem;
+    width: 10vw;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.hover-drop-down-list > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.hover-drop-down-toggle:hover ~ .hover-drop-down-list,
+.hover-drop-down-list:hover {
+    opacity: 1;
+    pointer-events: visible;
+}
