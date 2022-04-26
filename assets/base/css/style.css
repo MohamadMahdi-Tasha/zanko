@@ -139,6 +139,7 @@ body {
 }
 
 @media (max-width: 991px) {
+    .register-body {padding: 1rem;}
     .register-body {overflow: auto;}
     .header-toggle-btn {display: block;}
     .trust-img {display: none;}
