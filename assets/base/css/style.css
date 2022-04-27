@@ -191,4 +191,8 @@ body {
         justify-content: center;
         align-items: center;
     }
+
+    .link-color-dark-blue {
+        margin-top: 1.5rem;
+    }
 }
