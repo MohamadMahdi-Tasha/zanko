@@ -160,6 +160,7 @@ body {
     .social-btn > img {margin: 0;}
     .top-side-buttons-mobile {display:inline-flex;}
     .left-side-images > img:first-of-type {width: 100%;}
+    .register-body.centred-content > main > div > div:nth-of-type(1) > a:first-of-type  {width: 100% !important;}
     main.d-inline-flex > div:last-of-type {margin-bottom: 2rem;}
     main.d-inline-flex > div.w-50 {width: 100% !important;}
     form label {display: none;}
@@ -203,7 +204,7 @@ body {
         justify-content: center;
         align-items: center;
     }
-    
+
     .register-body.centred-content {
         min-height: auto;
         display: block;
@@ -221,10 +222,6 @@ body {
         display: flex !important;
         flex-direction: column !important;
         gap: .25rem !important;
-    }
-
-    .register-body.centred-content > main > div > div:nth-of-type(1) > a:first-of-type  {
-        width: 100% !important;
     }
 
     .navbar.fixed-top {
