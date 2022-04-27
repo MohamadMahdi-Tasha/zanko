@@ -16,6 +16,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 /*Styles*/
@@ -139,6 +140,16 @@ body {
     color: #091E67;
 }
 
+/*Email Page*/
+.navbar.fixed-top {padding: 2rem 5rem;}
+.register-body.centred-content {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Media Querys*/
 @media (max-width: 991px) {
     .link-color-dark-blue {margin-top: 1.5rem;}
     .register-body {padding: 1rem;}
