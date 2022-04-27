@@ -203,4 +203,32 @@ body {
         justify-content: center;
         align-items: center;
     }
+    
+    .register-body.centred-content {
+        min-height: auto;
+        display: block;
+    }
+
+    .register-body.centred-content > main {
+        width: 100% !important;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .register-body.centred-content > main > div > div:nth-of-type(1) {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: .25rem !important;
+    }
+
+    .register-body.centred-content > main > div > div:nth-of-type(1) > a:first-of-type  {
+        width: 100% !important;
+    }
+
+    .navbar.fixed-top {
+        position: static !important;
+        padding: 1rem;
+    }
 }
