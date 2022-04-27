@@ -32,6 +32,7 @@ img {pointer-events: none;}
 .form-top-side-mobile-btn.active {background: var(--blue-gradiant);}
 .form-top-side-mobile-btn:first-of-type {border-left: 1px solid var(--dark-blue);}
 .form-top-side-mobile-btn:hover {background-color: #ececec;}
+.link-color-dark-blue {color: var(--dark-blue) !important;}
 .menu-toggler:active {
     background-color: #ececec;
     border-color: var(--light-blue-gradiant);
@@ -49,7 +50,7 @@ img {pointer-events: none;}
 
 body {
     font-family: Yekan, sans-serif !important;
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 .register-body {
