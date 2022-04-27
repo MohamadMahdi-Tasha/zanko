@@ -30,7 +30,7 @@ img {pointer-events: none;}
 .social-btn:hover {background-color: #e2e2e2;}
 .form-input::placeholder {color: transparent;}
 .form-top-side-mobile-btn.active {background: var(--blue-gradiant);}
-.form-top-side-mobile-btn:first-of-type {border-left: 1px solid var(--dark-blue);}
+.top-side-buttons-mobile > :last-of-type > button {border-right: 1px solid var(--dark-blue);}
 .form-top-side-mobile-btn:hover {background-color: #ececec;}
 .link-color-dark-blue {color: var(--dark-blue) !important;}
 .menu-toggler:active {
