@@ -56,7 +56,7 @@ body {
 .register-body {
     background: radial-gradient(circle, #e8fcff, rgba(229,229,229,1) 49%);
     padding: 2rem 5rem;
-    overflow: hidden;
+    overflow-x: hidden;
     min-height: 100vh;
 }
 
@@ -140,8 +140,9 @@ body {
 }
 
 @media (max-width: 991px) {
+    .link-color-dark-blue {margin-top: 1.5rem;}
     .register-body {padding: 1rem;}
-    .register-body {overflow: auto;}
+    .register-body {overflow-x: auto;}
     .header-toggle-btn {display: block;}
     .trust-img {display: none;}
     .social-btn > span {display: none;}
@@ -190,9 +191,5 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .link-color-dark-blue {
-        margin-top: 1.5rem;
     }
 }
