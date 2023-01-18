@@ -1,0 +1,14 @@
+/*Codes By Mahdi Tasha*/
+/*Importing Our Font*/
+@import "../font/IRANYekan.css";
+
+/*Default Styles*/
+a {text-decoration: none !important;}
+img {pointer-events: none;}
+button {cursor: pointer;transition: .3s}
+ul,ol,li {margin: 0;padding: 0;list-style: none;}
+
+body {
+    font-size: 12px;
+    font-family: IRANYekan, sans-serif !important;
+}
