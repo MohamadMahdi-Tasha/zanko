@@ -23,13 +23,27 @@ body {
     font-family: IRANYekan, sans-serif !important;
 }
 
+/*For Debugging*/
+body:last-child {
+    margin-bottom: 200vh;
+}
+
 /*Styles*/
 .text-my-dark-blue {color: var(--my-dark-blue);}
 .bg-my-linear-gradient {background: var(--my-linear-gradiant);}
 .bg-my-radial-gradient {background: var(--my-radial-gradiant);background-repeat: no-repeat;}
-.input-holder {padding: 1px;border-radius: 3px;}
-.input-holder > input {border-radius: 3px;}
+.input-holder, .gradiant-btn {padding: 1px;border-radius: 3px;}
+.input-holder > input, .gradiant-btn > button {border-radius: 3px;}
 .bg-my-white {background-color: var(--my-white);}
+.login-signup-form-top-side button.active {background: linear-gradient(270deg, rgba(14, 112, 212, 0.3) 4.24%, rgba(40, 207, 228, 0.3) 100%);}
+.login-signup-form-top-side button:not(.active) {background-color: white;}
+.login-signup-form-top-side {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-left:1px solid #28CFE4;
+    border-right:1px solid #28CFE4;
+    border-top:1px solid #28CFE4;
+}
 
 .login-with-company-account-btn {
     background-color: white;
@@ -39,3 +53,12 @@ body {
 
 /*Hover, active, ...*/
 .login-with-company-account-btn:hover {background-color: var(--my-grey);}
+
+@media (max-width: 991px) {
+    .login-signup-form {
+        background-color: white;
+        border: 1px solid #28CFE4;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+}
