@@ -24,9 +24,9 @@ body {
 }
 
 /*For Debugging*/
-body:last-child {
-    margin-bottom: 200vh;
-}
+/*body:last-child {*/
+/*    margin-bottom: 200vh;*/
+/*}*/
 
 /*Styles*/
 .text-my-dark-blue {color: var(--my-dark-blue);}
