@@ -37,6 +37,13 @@ body:last-child {
 .bg-my-white {background-color: var(--my-white);}
 .login-signup-form-top-side button.active {background: linear-gradient(270deg, rgba(14, 112, 212, 0.3) 4.24%, rgba(40, 207, 228, 0.3) 100%);}
 .login-signup-form-top-side button:not(.active) {background-color: white;}
+#mobile-nav-bg {background-color: rgba(0,0,0,.2);transition: .3s}
+#mobile-nav {transition: .2s cubic-bezier(.4,0,.2,1);}
+#mobile-nav-holder[opened] > #mobile-nav-bg{opacity: 1;}
+#mobile-nav-holder:not([opened]) > #mobile-nav-bg{opacity: 0;}
+#mobile-nav-holder[opened] > #mobile-nav{right: 0;opacity: 1;}
+#mobile-nav-holder:not([opened]) > #mobile-nav{right: -75%;opacity: 0;}
+
 .login-signup-form-top-side {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
